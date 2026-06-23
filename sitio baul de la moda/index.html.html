@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Baúl de la Moda</title>
+    <link rel="stylesheet" href="baul.css">
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="logo.jpeg" alt="Logo" class="logo">
+        <div>
+            <h1>El Baúl de la Moda</h1>
+            <p>Elegancia y estilo para cada ocasión</p>
+        </div>
+    </div>
+
+    <nav>
+
+    <ul>
+
+        <li>
+            <a href="#inicio">Inicio</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">
+                Categorías ▼
+            </a>
+
+            <ul class="submenu">
+
+                <li>
+                    <a href="productos.html?categoria=vestidos">
+                        👗 Vestidos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="productos.html?categoria=blusas">
+                        👚 Blusas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="productos.html?categoria=pantalones">
+                        👖 Pantalones
+                    </a>
+                </li>
+
+                <li>
+                    <a href="productos.html?categoria=sweaters">
+                        🧥 Sweaters
+                    </a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+            <a href="carrito.html">
+                🛒 Carrito
+                <span id="contador-carrito">0</span>
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>Encontrá tu próximo outfit</h2>
+    <p>Vestidos, blusas, pantalones y sweaters seleccionados especialmente para vos.</p>
+</section>
+
+<section class="busqueda">
+    <h2>Buscar Productos</h2>
+
+    <select id="categoria">
+        <option value="vestidos">Vestidos</option>
+        <option value="blusas">Blusas</option>
+        <option value="pantalones">Pantalones</option>
+        <option value="sweaters">Sweaters</option>
+    </select>
+
+    <select id="talle">
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="38">38</option>
+        <option value="40">40</option>
+        <option value="42">42</option>
+        <option value="44">44</option>
+    </select>
+
+    <button onclick="buscar()">Buscar</button>
+</section>
+
+<section id="categorias" class="categorias">
+
+    <div class="categoria">
+        <h3>👗 Vestidos</h3>
+    </div>
+
+    <div class="categoria">
+        <h3>👚 Blusas</h3>
+    </div>
+
+    <div class="categoria">
+        <h3>👖 Pantalones</h3>
+    </div>
+
+    <div class="categoria">
+        <h3>🧥 Sweaters</h3>
+    </div>
+
+</section>
+
+<footer>
+    <p>© El Baúl de la Moda</p>
+</footer>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const categoria = params.get("categoria");
+const talle = params.get("talle");
+
+const titulo =
+document.getElementById("titulo");
+
+const productos =
+document.querySelectorAll(".producto");
+
+if(categoria){
+
+    if(talle){
+
+        titulo.innerHTML =
+        `${categoria.toUpperCase()} - Talle ${talle}`;
+
+    }else{
+
+        titulo.innerHTML =
+        categoria.toUpperCase();
+
+    }
+
+    productos.forEach(producto => {
+
+        const cat =
+        producto.dataset.categoria;
+
+        const tal =
+        producto.dataset.talle;
+
+        let mostrar = true;
+
+        if(cat !== categoria){
+            mostrar = false;
+        }
+
+        if(talle && tal !== talle){
+            mostrar = false;
+        }
+
+        if(!mostrar){
+            producto.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+<a href="https://wa.me/5493518112558"
+class="whatsapp-float"
+target="_blank">
+💬
+</a>
+</body>
+</html>

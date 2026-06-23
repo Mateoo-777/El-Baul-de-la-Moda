@@ -1,0 +1,187 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 30px;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:0;
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d4b08a;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.busqueda{
+    background:#fff;
+    width:90%;
+    max-width:700px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.busqueda select,
+.busqueda button{
+    padding:12px;
+    margin:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.busqueda button{
+    background:#111;
+    color:white;
+    cursor:pointer;
+    border:none;
+}
+
+.busqueda button:hover{
+    background:#d4b08a;
+}
+
+.categorias{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.categoria{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.categoria:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+#contador-carrito{
+    background:red;
+    color:white;
+    padding:2px 8px;
+    border-radius:50%;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:white;
+    min-width:220px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    z-index:1000;
+}
+
+.submenu li{
+    width:100%;
+}
+
+.submenu a{
+    color:black;
+    display:block;
+    padding:12px;
+}
+
+.submenu a:hover{
+    background:#f0f0f0;
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    font-size:35px;
+    text-decoration:none;
+}
