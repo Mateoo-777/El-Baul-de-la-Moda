@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - El Baúl de la Moda</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+<header>
+    <h1>El Baúl de la Moda</h1>
+</header>
+
+<nav>
+    <a href="index.html">← Volver al Inicio</a>
+
+    <a href="carrito.html" class="carrito-link">
+        🛒 Carrito <span id="contador-carrito">0</span>
+    </a>
+</nav>
+
+<h2 id="titulo"></h2>
+
+<section class="productos">
+
+    <div class="producto" data-categoria="vestidos" data-talle="L">
+
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+
+            <img src="animal print L (1).jpeg" class="slide activa">
+            <img src="animal print L (2).jpeg" class="slide">
+            <img src="animal print L (3).jpeg" class="slide">
+
+            <button class="next">&#10095;</button>
+        </div>
+
+        <h3>Vestido Animal Print</h3>
+        <p class="precio">$14.000</p>
+        <span class="talle">Talle L</span>
+
+        <button class="btn-carrito"
+        onclick="agregarCarrito('Vestido Animal Print',14000)">
+            🛒 Agregar al carrito
+        </button>
+
+    </div>
+
+<div class="producto" data-categoria="vestidos" data-talle="XL">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="celeste XL (1).jpeg" class="slide activa">
+        <img src="celeste XL (2).jpeg" class="slide">
+        <img src="celeste XL (3).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Jardinero Celeste</h3>
+    <p class="precio">$23.000</p>
+    <span class="talle">Talle XL</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Jardinero Celeste',23000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 3 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="CirculoRojo L (1).jpeg" class="slide activa">
+        <img src="CirculoRojo L (2).jpeg" class="slide">
+        <img src="CirculoRojo L (3).jpeg" class="slide">
+        <img src="CirculoRojo L (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Encaje de Guipur circular</h3>
+    <p class="precio">$18.000</p>
+    <span class="talle">Talle L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Encaje de Guipur circular',18000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+
+<!-- PRODUCTO 5 -->
+<div class="producto" data-categoria="vestidos" data-talle="M">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="Floreado M (1).jpeg" class="slide activa">
+        <img src="Floreado M (2).jpeg" class="slide">
+        <img src="Floreado M (3).jpeg" class="slide">
+        <img src="Floreado M (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Floreado</h3>
+    <p class="precio">$20.000</p>
+    <span class="talle">Talle M</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Floreado',20000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 6 -->
+<div class="producto" data-categoria="vestidos" data-talle="XL">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="Gris Cian XL (1).jpeg" class="slide activa">
+        <img src="Gris Cian XL (2).jpeg" class="slide">
+        <img src="Gris Cian XL (3).jpeg" class="slide">
+        <img src="Gris Cian XL (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Gris Cian</h3>
+    <p class="precio">$22.000</p>
+    <span class="talle">Talle XL</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Gris Cian',22000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 7 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="Ladrillo L (1).jpeg" class="slide activa">
+        <img src="Ladrillo L (2).jpeg" class="slide">
+        <img src="Ladrillo L (3).jpeg" class="slide">
+        <img src="Ladrillo L (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Ladrillo Elastizado</h3>
+    <p class="precio">$10.000</p>
+    <span class="talle">Talle L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Ladrillo Elastizado',10000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 8 -->
+<div class="producto" data-categoria="vestidos" data-talle="XL">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="Rojo XL (1).jpeg" class="slide activa">
+        <img src="Rojo XL (2).jpeg" class="slide">
+        <img src="Rojo XL (3).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Rojo Sastrero Elastizado</h3>
+    <p class="precio">$22.000</p>
+    <span class="talle">Talle XL</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Rojo Sastrero Elastizado',22000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 9 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="vestido (1).jpeg" class="slide activa">
+        <img src="vestido (2).jpeg" class="slide">
+        <img src="vestido (3).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Jumper Verde de Algodon</h3>
+    <p class="precio">$22.000</p>
+    <span class="talle">Talle L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Jumper Verde de Algodon',22000)">
+        🛒 Agregar al carrito
+    </button>
+
+</div>
+
+<!-- PRODUCTO 10 -->
+<div class="producto" data-categoria="vestidos" data-talle="2XL">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="violeta 2XL (1).jpeg" class="slide activa">
+        <img src="violeta 2XL (2).jpeg" class="slide">
+        <img src="violeta 2XL (3).jpeg" class="slide">
+        <img src="violeta 2XL (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Uva Elastizado 2XL</h3>
+    <p class="precio">$22.000</p>
+    <span class="talle">Talle 2X    L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Uva Elastizado 2XL',22000)">
+        🛒 Agregar al carrito
+    </button>
+
+    <!-- PRODUCTO 11 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="cuadrille L (1).jpeg" class="slide activa">
+        <img src="cuadrille L (2).jpeg" class="slide">
+        <img src="cuadrille L (3).jpeg" class="slide">
+        <img src="cuadrille L (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Cuadrille</h3>
+    <p class="precio">$25.000</p>
+    <span class="talle">Talle L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Cuadrille',25000)">
+        🛒 Agregar al carrito
+    </button>
+</div>
+
+<!-- PRODUCTO 12 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="mostaza L (1).jpeg" class="slide activa">
+        <img src="mostaza L (2).jpeg" class="slide">
+        <img src="mostaza L (3).jpeg" class="slide">
+        <img src="mostaza L (4).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Mostaza</h3>
+    <p class="precio">$25.000</p>
+    <span class="talle">Talle L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Mostaza',25000)">
+        🛒 Agregar al carrito
+    </button>
+</div>
+
+<!-- PRODUCTO 13 -->
+<div class="producto" data-categoria="vestidos" data-talle="L">
+
+    <div class="slider">
+        <button class="prev">&#10094;</button>
+
+        <img src="rosa L (1).jpeg" class="slide activa">
+        <img src="rosa L (2).jpeg" class="slide">
+        <img src="rosa L (3).jpeg" class="slide">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <h3>Vestido Rosa</h3>
+    <p class="precio">$22.000</p>
+    <span class="talle">Talle 2X    L</span>
+
+    <button class="btn-carrito"
+    onclick="agregarCarrito('Vestido Rosa',22000)">
+        🛒 Agregar al carrito
+    </button>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<!-- FILTRO POR CATEGORÍA Y TALLE -->
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const categoria = params.get("categoria");
+const talle = params.get("talle");
+
+if(categoria && talle){
+
+    document.getElementById("titulo").innerHTML =
+    `${categoria.toUpperCase()} - Talle ${talle}`;
+
+    const productos =
+    document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+
+        const cat = producto.dataset.categoria;
+        const tal = producto.dataset.talle;
+
+        if(cat !== categoria || tal !== talle){
+            producto.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+<!-- CARRUSEL -->
+<script>
+
+document.querySelectorAll(".slider").forEach(slider => {
+
+    const slides = slider.querySelectorAll(".slide");
+    const prev = slider.querySelector(".prev");
+    const next = slider.querySelector(".next");
+
+    let actual = 0;
+
+    function mostrar(index){
+
+        slides.forEach(slide => {
+            slide.classList.remove("activa");
+        });
+
+        slides[index].classList.add("activa");
+
+    }
+
+    next.addEventListener("click", () => {
+
+        actual++;
+
+        if(actual >= slides.length){
+            actual = 0;
+        }
+
+        mostrar(actual);
+
+    });
+
+    prev.addEventListener("click", () => {
+
+        actual--;
+
+        if(actual < 0){
+            actual = slides.length - 1;
+        }
+
+        mostrar(actual);
+
+    });
+
+});
+
+</script>
+
+<!-- CONTADOR DEL CARRITO -->
+<script>
+
+const carrito =
+JSON.parse(localStorage.getItem("carrito")) || [];
+
+let cantidad = 0;
+
+carrito.forEach(item => {
+    cantidad += item.cantidad;
+});
+
+document.getElementById(
+"contador-carrito"
+).innerHTML = cantidad;
+
+</script>
+
+<!-- FUNCIONES DEL CARRITO -->
+<script src="carrito.js"></script>
+
+</body>
+</html>
